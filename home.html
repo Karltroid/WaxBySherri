@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- meta/seo info-->
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="content-language" content='en-US'>
+		<meta name="robots" content="index, follow">
+		<meta name="title" content="Wax by Sherri">
+		<meta name="description" content="">
+		<meta name="keywords" content="Wax, Sherri, Eyebrows, Legs, Arms">
+		<meta name="language" content="English">
+		<meta name="author" content="Sherri Pereira">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- stylesheets & scripts -->
+		<link rel="stylesheet" type="text/css" href="styles/vars.css">
+		<link rel="stylesheet" type="text/css" href="styles/desktop.css">
+		<link rel="stylesheet" type="text/css" media="(max-width: 990px)" href="styles/mobile.css">
+		<script src="scripts/slideshow.js"></script>
+		<script src="scripts/stickynavbar.js"></script>
+
+		<!-- site title & icon -->
+		<link rel="shortcut icon" href="images/media/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="images/LOGO.png" type="image/x-icon">
+		<title>Wax by Sherri | Home</title>
+	</head>
+	<body>
+
+		<div id="HeaderSection">
+			<div class="color-tint">
+				<div class="left">
+					<img class="logo" src="images/LOGO_Simple.png" />
+				</div>
+				<div class="right">
+					<div class="buttons">
+						<a href="https://www.vagaro.com/waxbysherri/book-now"><button class="SolidButton">Book Appointment</button></a>
+						<a href="#footer"><button class="OutlineButton">Contact Sherri</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="navbar">
+			<img src="images/LOGO.png" />
+			<ul id="navitems">
+				<li><a href="https://www.vagaro.com/waxbysherri/book-now">Book Appointment</a></li>
+				<li><a href="#footer">Contact</a></li>
+				<li><a href="#examples">Examples</a></li>
+				<li><a href="#service-eyes">Services</a></li>
+				<li><a href="#location">Location</a></li>
+			</ul>
+			<img id="mobilenav_btn" class="mobile" src="images/icons/menu.png" onclick="toggle_mobile_nav();" />
+		</div>
+
+		<div id="mobilenavitems" class="mobile">
+			<ul>
+				<li><a href="https://www.vagaro.com/waxbysherri/book-now" onclick="toggle_mobile_nav();">Book Appointment</a></li>
+				<li><a href="#footer" onclick="toggle_mobile_nav();">Contact</a></li>
+				<li><a href="#examples" onclick="toggle_mobile_nav();">Examples</a></li>
+				<li><a href="#service-eyes" onclick="toggle_mobile_nav();">Services</a></li>
+				<li><a href="#location" onclick="toggle_mobile_nav();">Location</a></li>
+			</ul>
+		</div>
+
+		<div id="examples">
+			<h1>Examples</h1>
+			<div class="slideshow">
+				<button id="slideshow_leftbtn" onclick="carousel(false, -1);">
+					<img src="images/icons/arrow.png" />
+				</button>
+				<div class="leftcard-ancor">
+					<div id="leftcard"></div>
+				</div>
+				<div class="centercard-ancor">
+					<div id="centercard"></div>
+				</div>
+				<div class="rightcard-ancor">
+					<div id="rightcard"></div>
+				</div>
+				<button id="slideshow_rightbtn" onclick="carousel(false, 1);">
+					<img src="images/icons/arrow.png" />
+				</button>
+			</div>
+		</div>
+
+		<div id="service-eyes">
+			<h1>Eyebrow & Lash Services</h1>
+			<div class="grid-display">
+				<a href="https://www.vagaro.com/waxbysherri/services"><div class="service-card" >
+					<div class="service-ad" style="background-image: url('images/slideshow/image9.jpeg');">
+						<div class="service-info">
+							<div class="service-name">Brow Sculpting</div>
+							<div class="service-desc">This service includes a lamination, wax and tint of the eyebrows. Be sure to give eyebrows 2-3 weeks growth before coming in for any lamination service.</div>
+						</div>
+					</div>
+					<div class="service-book">
+						Book for $80.00
+					</div>
+				</div></a>
+
+				<a href="https://www.vagaro.com/waxbysherri/services"><div class="service-card" >
+					<div class="service-ad" style="background-image: url('images/slideshow/image10.jpeg');">
+						<div class="service-info">
+							<div class="service-name">Eyelash Tinting</div>
+							<div class="service-desc">Semi-Permanent dye used to color eyelashes giving the appearance of a more bold, mascara-like appearance. Results last about 4 weeks.</div>
+						</div>
+					</div>
+					<div class="service-book">
+						Book for $20.00
+					</div>
+				</div></a>
+
+				<a href="https://www.vagaro.com/waxbysherri/services"><div class="service-card" >
+					<div class="service-ad" style="background-image: url('images/slideshow/image11.jpeg');">
+						<div class="service-info">
+							<div class="service-name">Eyebrow Tinting</div>
+							<div class="service-desc">Semi-Permanent dye used to color brow hairs giving the appearance of a more defined, symmetrical eyebrow. Results last about 4 weeks.</div>
+						</div>
+					</div>
+					<div class="service-book">
+						Book for $15.00
+					</div>
+				</div></a>
+
+				<a href="https://www.vagaro.com/waxbysherri/services"><div class="service-card" >
+					<div class="service-ad" style="background-image: url('images/slideshow/image9.jpeg');">
+						<div class="service-info">
+							<div class="service-name">Brow Lamination</div>
+							<div class="service-desc">Achieve the appearance of thicker, fuller eyebrows with a chemical process that allows hairs to be permed in a uniform shape lasting up to 6 weeks. Perfect for people with unruly eyebrows, or people simply looking for a fluffier brow. Brows must not be trimmed for 3 weeks prior to the appointment.</div>
+						</div>
+					</div>
+					<div class="service-book">
+						Book for $70.00
+					</div>
+				</div></a>
+
+				<a href="https://www.vagaro.com/waxbysherri/services"><div class="service-card" >
+					<div class="service-ad" style="background-image: url('images/slideshow/image3.jpeg');">
+						<div class="service-info">
+							<div class="service-name">Eyelash Lift</div>
+							<div class="service-desc">A semi-permanent lift and curl of your natural lashes similar to a perm. Kiss the eyelash curler good-bye with this treatment that lasts 6-8 weeks. For best results, pair with an eyelash tint for a mascara like look.</div>
+						</div>
+					</div>
+					<div class="service-book">
+						Book for $70.00
+					</div>
+				</div></a>
+
+				<a href="https://www.vagaro.com/waxbysherri/services"><div class="service-card" >
+					<div class="service-ad" style="background-image: url('images/slideshow/image0.jpeg');">
+						<div class="service-info">
+							<div class="service-name">Eyelash Lift + Tint<aside>$10 OFF</aside></div>
+							<div class="service-desc">This service includes a lamination, wax and tint of the eyebrows. Be sure to give eyebrows 2-3 weeks growth before coming in for any lamination service.</div>
+						</div>
+					</div>
+					<div class="service-book">
+						Book for <strike>$90.00</strike> $80.00
+					</div>
+				</div></a>
+				
+			</div>
+		</div>
+
+
+		<div id="service-body">
+			<h1>Waxing Services</h1>
+			<div class="grid-display">
+				<a href="https://www.vagaro.com/waxbysherri/services"><div class="service-card" >
+					<div class="service-ad" style="background-image: url('images/slideshow/image9.jpeg');">
+						<div class="service-info">
+							<div class="service-name">Eyebrow</div>
+							<div class="service-desc">Basic Eyebrow Clean up - Trim, Wax and Pluck</div>
+						</div>
+					</div>
+					<div class="service-book">
+						Book for $18.00
+					</div>
+				</div></a>
+
+				<a href="https://www.vagaro.com/waxbysherri/services"><div class="service-card" >
+					<div class="service-ad" style="background-image: url('images/wax_ads/upperlip.jpg');">
+						<div class="service-info">
+							<div class="service-name">Upper Lip</div>
+							<div class="service-desc">Upper lip wax</div>
+						</div>
+					</div>
+					<div class="service-book">
+						Book for $10.00
+					</div>
+				</div></a>
+
+				<a href="https://www.vagaro.com/waxbysherri/services"><div class="service-card" >
+					<div class="service-ad" style="background-image: url('images/wax_ads/chin.jpg');">
+						<div class="service-info">
+							<div class="service-name">Chin</div>
+							<div class="service-desc">Chin wax - Includes lower lip</div>
+						</div>
+					</div>
+					<div class="service-book">
+						Book for $15.00
+					</div>
+				</div></a>
+
+				<a href="https://www.vagaro.com/waxbysherri/services"><div class="service-card" >
+					<div class="service-ad" style="background-image: url('images/wax_ads/lipandchin.jpg');">
+						<div class="service-info">
+							<div class="service-name">Lip and Chin</div>
+							<div class="service-desc">Includes lower lip</div>
+						</div>
+					</div>
+					<div class="service-book">
+						Book for $25.00
+					</div>
+				</div></a>
+
+				<a href="https://www.vagaro.com/waxbysherri/services"><div class="service-card" >
+					<div class="service-ad" style="background-image: url('images/wax_ads/sideburns.jpg');">
+						<div class="service-info">
+							<div class="service-name">Side-Burns</div>
+							<div class="service-desc">Side-burns wax</div>
+						</div>
+					</div>
+					<div class="service-book">
+						Book for $10.00
+					</div>
+				</div></a>
+
+				<a href="https://www.vagaro.com/waxbysherri/services"><div class="service-card" >
+					<div class="service-ad" style="background-image: url('images/wax_ads/nose.jpg');">
+						<div class="service-info">
+							<div class="service-name">Nose</div>
+							<div class="service-desc">Nose wax</div>
+						</div>
+					</div>
+					<div class="service-book">
+						Book for $10.00
+					</div>
+				</div></a>
+
+				<a href="https://www.vagaro.com/waxbysherri/services"><div class="service-card" >
+					<div class="service-ad" style="background-image: url('images/wax_ads/fullface.jpg');">
+						<div class="service-info">
+							<div class="service-name">Full Face <aside>$18 OFF</aside></div>
+							<div class="service-desc">From forehead to chin, and everything in between.</div>
+						</div>
+					</div>
+					<div class="service-book">
+						Book for <strike>$63.00</strike> $45.00
+					</div>
+				</div></a>
+
+				<a href="https://www.vagaro.com/waxbysherri/services"><div class="service-card" >
+					<div class="service-ad" style="background-image: url('images/wax_ads/bikinibrazilian.jpg');">
+						<div class="service-info">
+							<div class="service-name">Bikini Brazilian</div>
+							<div class="service-desc">As little or as much as you want off the front, this service includes the back.</div>
+						</div>
+					</div>
+					<div class="service-book">
+						Book for $50.00
+					</div>
+				</div></a>
+
+				<a href="https://www.vagaro.com/waxbysherri/services"><div class="service-card" >
+					<div class="service-ad" style="background-image: url('images/wax_ads/bikinifull.jpg');">
+						<div class="service-info">
+							<div class="service-name">Bikini Full</div>
+							<div class="service-desc">As little or as much as you like off the front, this service does NOT include the back</div>
+						</div>
+					</div>
+					<div class="service-book">
+						Book for $45.00
+					</div>
+				</div></a>
+
+				<a href="https://www.vagaro.com/waxbysherri/services"><div class="service-card" >
+					<div class="service-ad" style="background-image: url('images/wax_ads/bikiniline.jpg');">
+						<div class="service-info">
+							<div class="service-name">Bikini Line</div>
+							<div class="service-desc">Anything that would peak out of a bikini is included in this service</div>
+						</div>
+					</div>
+					<div class="service-book">
+						Book for $35.00
+					</div>
+				</div></a>
+
+				<a href="https://www.vagaro.com/waxbysherri/services"><div class="service-card" >
+					<div class="service-ad" style="background-image: url('images/wax_ads/underarms.jpg');">
+						<div class="service-info">
+							<div class="service-name">Underarms</div>
+							<div class="service-desc">Underarms wax</div>
+						</div>
+					</div>
+					<div class="service-book">
+						Book for $20.00
+					</div>
+				</div></a>
+
+				<a href="https://www.vagaro.com/waxbysherri/services"><div class="service-card" >
+					<div class="service-ad" style="background-image: url('images/wax_ads/fullarms.jpg');">
+						<div class="service-info">
+							<div class="service-name">Full Arms</div>
+							<div class="service-desc">Full Arm wax includes Fingers/Hands</div>
+						</div>
+					</div>
+					<div class="service-book">
+						Book for $65.00
+					</div>
+				</div></a>
+
+				<a href="https://www.vagaro.com/waxbysherri/services"><div class="service-card" >
+					<div class="service-ad" style="background-image: url('images/wax_ads/halfarms.jpg');">
+						<div class="service-info">
+							<div class="service-name">Half Arms</div>
+							<div class="service-desc">Includes Fingers/Hands</div>
+						</div>
+					</div>
+					<div class="service-book">
+						Book for $30
+					</div>
+				</div></a>
+
+				<a href="https://www.vagaro.com/waxbysherri/services"><div class="service-card" >
+					<div class="service-ad" style="background-image: url('images/wax_ads/fulllegs.jpg');">
+						<div class="service-info">
+							<div class="service-name">Full Legs</div>
+							<div class="service-desc">Includes Toes/Feet</div>
+						</div>
+					</div>
+					<div class="service-book">
+						Book for $75.00
+					</div>
+				</div></a>
+
+				<a href="https://www.vagaro.com/waxbysherri/services"><div class="service-card" >
+					<div class="service-ad" style="background-image: url('images/wax_ads/halflegs.jpg');">
+						<div class="service-info">
+							<div class="service-name">Half Legs</div>
+							<div class="service-desc">Includes Toes/Feet</div>
+						</div>
+					</div>
+					<div class="service-book">
+						Book for $40.00
+					</div>
+				</div></a>
+
+				<a href="https://www.vagaro.com/waxbysherri/services"><div class="service-card" >
+					<div class="service-ad" style="background-image: url('images/wax_ads/stomach.jpg');">
+						<div class="service-info">
+							<div class="service-name">Stomach</div>
+							<div class="service-desc">Stomach wax</div>
+						</div>
+					</div>
+					<div class="service-book">
+						Book for $35.00
+					</div>
+				</div></a>
+
+				<a href="https://www.vagaro.com/waxbysherri/services"><div class="service-card" >
+					<div class="service-ad" style="background-image: url('images/wax_ads/fullback.jpg');">
+						<div class="service-info">
+							<div class="service-name">Full Back</div>
+							<div class="service-desc">Includes the entire back</div>
+						</div>
+					</div>
+					<div class="service-book">
+						Book for $65.00
+					</div>
+				</div></a>
+
+				<a href="https://www.vagaro.com/waxbysherri/services"><div class="service-card" >
+					<div class="service-ad" style="background-image: url('images/wax_ads/halfback.jpg');">
+						<div class="service-info">
+							<div class="service-name">Half Back</div>
+							<div class="service-desc">The upper, or lower half of the back.</div>
+						</div>
+					</div>
+					<div class="service-book">
+						Book for $35.00
+					</div>
+				</div></a>
+
+				<a href="https://www.vagaro.com/waxbysherri/services"><div class="service-card" >
+					<div class="service-ad" style="background-image: url('images/wax_ads/chest.jpg');">
+						<div class="service-info">
+							<div class="service-name">Chest</div>
+							<div class="service-desc">Chest wax</div>
+						</div>
+					</div>
+					<div class="service-book">
+						Book for $35.00
+					</div>
+				</div></a>
+
+			</div>
+		</div>
+
+
+		<div class="footer-dark">
+			<footer id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 col-md-3 item">
+							<h3>Location</h3>
+							<p><a id="location" href="https://maps.google.com/maps?key=AIzaSyDaa0FdAfpQzAF1c7Twg7QyIZZ_iFHthto&daddr=42.39226,-71.56731&saddr=&hl=en">Wax By Sherri,<br />18 Church St, Hudson, MA</a></p><br />
+							<h3>Contact</h3>
+							<p><a href="tel:9788750331">(978) 875-0331</a><br />
+							<a href="mailto:pereira.sherri@yahoo.com">pereira.sherri@yahoo.com</a></p>
+						</div>
+						<div id="hours" class="col-sm-6 col-md-3 item" style="border-right: 1px dashed lightgray;">
+							<h3>Hours</h3>
+							<ul>
+								<li>Sunday<aside>Closed</aside></li>
+								<li>Monday<aside>9AM - 7PM</aside></aside></li>
+								<li>Tuesday<aside>9AM - 7PM</aside></li>
+								<li>Wednesday<aside>9AM - 7PM</aside></li>
+								<li>Thursday<aside>9AM - 7PM</aside></li>
+								<li>Friday<aside>9AM - 7PM</aside></li>
+								<li>Saturday<aside>9AM - 6PM</aside></li>
+							</ul>
+						</div>
+
+						<div class="col-md-6 item text">
+							<img class="profile-pic" src="images/sherri/profile1.png" />
+							<h3>About Sherri Pereira</h3>
+							<p>Hi! My name is Sherri Pereira, i'm licensed esthetician with 4+ Years experience in the beauty industry specializing in speed waxing. Located conveniently in downtown Hudson.<br/><br/></p>
+							<div class="socials">
+								<a href="https://www.facebook.com/waxbysherri"><img src="images/icons/facebook.png" /></a>
+								<a href="https://www.instagram.com/waxbysherri/"><img src="images/icons/instagram.png" /></a>
+								<!--<a href=""><img src="images/icons/twitter.png" /></a>-->
+							</div>
+						</div>
+
+						
+						
+					</div>
+					<p class="copyright">Wax by Sherri © 2022</p>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

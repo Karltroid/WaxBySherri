@@ -1,0 +1,327 @@
+/* Hide scrollbar for mobile */
+::-webkit-scrollbar { display: none; }
+
+body
+{
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+
+/* v navbar v */
+
+#navitems
+{
+	display: none;
+}
+
+#mobilenav_btn
+{
+	display: initial;
+	float: right;
+}
+
+#mobilenavitems
+{
+	width: 100vw;
+	height: calc(100vh - 100px);
+	background-color: lightgray;
+	position: fixed;
+	top: 100px;
+	right: 0;
+	text-align: right;
+	z-index: 999;
+}
+
+#mobilenavitems a
+{
+	display: block;
+	padding: calc(36vh/5);
+	text-align: center;
+	color: var(--siteDarkBlue);
+	font-family: product-sans-bold;
+	font-size: 3vh;
+}
+
+#mobilenavitems a:hover
+{
+	background-color: rgba(0,0,0,.2);
+	text-decoration: underline;
+}
+
+#mobilenav_btn:hover
+{
+	cursor: pointer;
+}
+
+/* ^ navbar ^ */
+
+
+/* v Main Header v */
+
+#HeaderSection
+{
+	background-image: url('../images/Example1_Finished.png');
+}
+
+#HeaderSection .left
+{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
+}
+#HeaderSection .right
+{
+	top: initial;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
+}
+
+#HeaderSection .logo
+{
+	position: absolute;
+	left: 50%;
+	top: 60%;
+	transform: translate(-50%, -50%);
+	max-width: 500px;
+}
+
+#HeaderSection .buttons
+{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+#HeaderSection .buttons button
+{
+	position: relative;
+	display: block;
+	margin: 30px auto;
+	width: 80%;
+	height: 80px;
+	max-width: 400px;
+	text-overflow: nowrap;
+}
+
+.SolidButton
+{
+	transition: .2s;
+	border: 8px solid white;
+	padding: 10px;
+	font-family: product-sans-bold;
+	background: white;
+	color: var(--siteDarkBlue);
+}
+
+
+.OutlineButton
+{
+	transition: .2s;
+	border: 8px solid white;
+	padding: 10px;
+	font-size: 1.5em;
+	font-weight: lighter;
+	color:  white;
+}
+
+.SolidButton:hover, .OutlineButton:hover
+{
+	transition: .3s;
+	cursor: pointer;
+	background-color: var(--siteDarkBlue);
+	border-color: var(--siteDarkBlue);
+	color: white;
+}
+
+/* ^ Main Header ^ */
+
+
+/* v examples/slideshow v */
+
+#examples
+{
+	background-color: var(--siteDarkBlue);
+}
+
+#examples h1
+{
+	color: white;
+	margin-top: 30px;
+}
+
+#examples .slideshow
+{
+	width: 100%;
+	height: 450px;
+	background-color: var(--siteDarkBlue);
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	box-shadow: none;
+}
+
+#examples .leftcard-ancor div
+{
+	position: absolute;
+	height: 300px;
+	width: 300px;
+	left: -150px;
+	top: -150px;
+	background-image: url('../images/slideshow/image0.jpeg');
+	background-size: cover;
+	z-index: 100;
+	border-radius: 15px;
+	box-shadow: 0px 4px 10px black;
+	opacity: .5;
+	filter: blur(1px);
+	z-index: 50;
+}
+
+#examples .centercard-ancor div
+{
+	position: absolute;
+	height: 360px;
+	width: 360px;
+	left: -180px;
+	top: -180px;
+	background-image: url('../images/slideshow/image1.jpeg');
+	background-size: cover;
+	z-index: 100;
+	border-radius: 15px;
+	box-shadow: 0px 4px 10px black;
+	z-index: 100;
+}
+
+#examples .rightcard-ancor div
+{
+	position: absolute;
+	height: 300px;
+	width: 300px;
+	right: -150px;
+	top: -150px;
+	background-image: url('../images/slideshow/image2.jpeg');
+	background-size: cover;
+	z-index: 100;
+	border-radius: 15px;
+	box-shadow: 0px 4px 10px black;
+	opacity: .5;
+	filter: blur(1px);
+	z-index: 50;
+}
+
+/* ^ examples/slideshow ^ */
+
+
+/* v services v */
+
+.service-card
+{
+	display: inline-block;
+	margin: 20px 0;
+	transition: .1s;
+	width: 100%;
+}
+
+.service-ad
+{
+	width:  100%;
+	height:  400px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	text-align: left;
+	border-radius: 20px 20px 0 0;
+}
+
+#service-eyes
+{
+	background-color: var(--siteLightBlue);
+}
+
+#service-body
+{
+	background-color: var(--siteDarkBlue);
+}
+
+#service-eyes .grid-display, #service-body .grid-display
+{
+	width: 100%;
+	padding: 25px;
+	box-shadow: none;
+}
+
+#service-eyes h1
+{
+	background-color: var(--siteLightBlue);
+	padding-top: 60px;
+}
+
+#service-body h1
+{
+	background-color: var(--siteDarkBlue);
+	padding-top: 60px;
+}
+
+/* ^ services ^ */
+
+
+/* v footer v */
+
+footer .container
+{
+	padding: 0;
+}
+
+footer .row
+{
+	margin: 0;
+}
+
+footer .col-md-3
+{
+	order: 2;
+	flex: 0 0 100%;
+	max-width: 100%;
+	padding: 0;
+	border: none !important; 
+}
+
+footer .col-md-6
+{
+	order: 1;
+	flex: 0 0 100%;
+	max-width: 100%;
+	margin: 0 auto 20px;
+}
+
+footer #hours
+{
+	flex: 0 0 60%;
+	max-width: 60%;
+	margin: 0 auto;
+	padding-top: 25px;
+}
+
+footer li
+{
+	text-align: left;
+}
+
+footer .col-md-6 .profile-pic
+{
+	float: none;
+	margin: 0 auto 10px;
+}
+
+.footer-dark .item.text, .footer-dark p,  .footer-dark h3
+{
+	text-align: center;
+}
+
+/* ^ footer ^ */
