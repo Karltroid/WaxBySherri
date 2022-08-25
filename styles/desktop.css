@@ -58,7 +58,7 @@ strike
 
 #HeaderSection
 {
-	min-height: 100vh;
+	min-height: 100%;
 	min-width: 100%;
 	background-image: url('../images/Example1_Finished.png');
 	background-size: cover;
