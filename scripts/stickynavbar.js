@@ -22,7 +22,6 @@ document.addEventListener('scroll', function()
 
 window.addEventListener('resize', function()
 {
-	console.log("pog");
 	if (window.innerWidth <= 990 && mobile_nav_open)
 		toggle_mobile_nav();
 });
@@ -38,9 +37,16 @@ function update_navbar() // make navbar fixed to top of the page after it is scr
 	navbar.style.opacity = progress;
 
 	if (progress >= 1)
+	{
 		navbar.classList.add("sticky-navbar");
+		header.classList.add("sticky-navbar-correction");
+	}
 	else
+	{
 		navbar.classList.remove("sticky-navbar");
+		header.classList.remove("sticky-navbar-correction");
+	}
+	
 }
 
 function toggle_mobile_nav()
