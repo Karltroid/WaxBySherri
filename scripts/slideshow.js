@@ -29,12 +29,11 @@ function findimages()
 		let img = document.createElement('img');
 		let imgurl = "url('images/slideshow/image" + imgCount + ".jpeg')"
 		img.src = imgurl;
-
+		console.log("found " + imgurl)
 		img.onload = function(e)
 		{
 			images.push(imgurl);
 			imgCount++;
-			;
 		};
 
 		document.body.appendChild(img);
