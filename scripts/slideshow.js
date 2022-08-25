@@ -10,7 +10,20 @@ document.addEventListener("DOMContentLoaded", function(event) // wait for the we
 	slideshow_centercard = document.getElementById("centercard");
 	slideshow_rightcard = document.getElementById("rightcard");
 
-	slideshow_photos = findimages();
+	slideshow_photos = ["url('images/slideshow/image0.jpeg')",
+						"url('images/slideshow/image1.jpeg')",
+						"url('images/slideshow/image2.jpeg')",
+						"url('images/slideshow/image3.jpeg')",
+						"url('images/slideshow/image4.jpeg')",
+						"url('images/slideshow/image5.jpeg')",
+						"url('images/slideshow/image6.jpeg')",
+						"url('images/slideshow/image7.jpeg')",
+						"url('images/slideshow/image8.jpeg')",
+						"url('images/slideshow/image9.jpeg')",
+						"url('images/slideshow/image10.jpeg')",
+						"url('images/slideshow/image11.jpeg')",
+						"url('images/slideshow/image12.jpeg')",
+						"url('images/slideshow/image13.jpeg')"]; //findimages(); <-- implement when site is on server provider
 
 	currentslide = slideshow_photos.length - 1;
 
@@ -32,8 +45,9 @@ function findimages()
 		console.log("found " + imgurl)
 		img.onload = function(e)
 		{
-			images.push(imgurl);
+			images.push(imgurl);https://drive.google.com/drive/folders/1FaAX1urlKGQs9zWtsplUQfLwuLj9mV24?usp=sharing
 			imgCount++;
+			;
 		};
 
 		document.body.appendChild(img);
