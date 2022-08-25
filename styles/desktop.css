@@ -58,12 +58,12 @@ strike
 
 #HeaderSection
 {
-	min-height: 100%;
+	min-height: 100vh;
 	min-width: 100%;
 	background-image: url('../images/Example1_Finished.png');
 	background-size: cover;
 	background-position: center center;
-	margin-bottom: -100px;
+	
 }
 
 #HeaderSection .color-tint
@@ -169,8 +169,8 @@ strike
 	box-shadow: 0 3px 6px rgba(0,0,17,0.11), 0 3px 6px rgba(0,0,17,0.18);
 	background-color: white;
 	z-index: 1000;
-	position: relative;
-	top: 100%;
+	position: absolute;
+	bottom: 0;
 	opacity: 0;
 }
 
@@ -178,11 +178,7 @@ strike
 {
 	position: fixed !important;
 	top: 0 !important;
-}
-
-.sticky-navbar-correction
-{
-	margin-bottom: 0px !important;
+	margin-bottom: 50px;
 }
 
 #navbar img
